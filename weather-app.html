@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="weather-app.css">
+    <script src="weather-app.js"></script>
+</head>
+<body>
+    <h1 class="title">Weather Forecast</h1>
+    <div class="search-container">
+        <input type="search" placeholder="Enter City Name" id="city-name">
+        <input type="button" id="search-btn" value="Search Now" onclick="loadWeatherData('')">
+    </div>  
+
+    <div class="city-temp container col-md-6">
+        <div style="display: flex; color: #fff;">
+            <h1 class="temp mb-0">
+                <!-- 20.0*C -->
+            </h1>
+            <div class="city-time px-2">
+                <h1 class="name mb-0 pt-3">
+                    <!-- Faisalabad, PK -->
+                </h1>
+                <small>
+                    <span class="time">
+                        <!-- 5 : 23 -->
+                    </span>
+                    -
+                    <span class="date">
+                        <!-- Saturday, Mar 16, 2024 -->
+                    </span>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="city-temp container col-md-6" style="color: #fff; backdrop-filter: blur(2px);">
+        <h3 style="text-align: center;" class="pb-3">Weather Details</h3>
+
+        <div class="row">
+            <div class="col text-left"> 
+                <p><b>Temperature</b></p>
+            </div>
+            <div class="col text-right">
+                <p id="temperature">
+                    <!-- 20.0 C -->
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-left">
+                <p><b>Feels Like</b></p>
+            </div>
+            <div class="col text-right">
+                <p id="feels-like">
+                    <!-- 20.0 C -->
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-left">
+                <p><b>Pressure</b></p>
+            </div>
+            <div class="col text-right">
+                <p id="pressure">
+                    <!-- 20.0 C -->
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-left">
+                <p><b>Humidity</b></p>
+            </div>
+            <div class="col text-right">
+                <p id="humidity">
+                    <!-- 20.0 C -->
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-left">
+                <p><b>Visibility</b></p>
+            </div>
+            <div class="col text-right">
+                <p id="visibility">
+                    <!-- 20.0 C -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
